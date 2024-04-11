@@ -1,7 +1,5 @@
 <?php
 
-$query = "quicksilver - don't cry my lady love";
-
 // Google Search API Keys (free limit is 100 requests/day. Minimum 1 key)
 // Get API key from https://developers.google.com/custom-search/v1/introduction 
 // (Click 'Get A Key')
@@ -20,6 +18,7 @@ require_once(__DIR__.'/class.azlyricsfind.php');
 $finder = new AZLyricsFind($google_api_keys,$google_cx);
 
 // Get lyrics
+$query = "quicksilver - don't cry my lady love";
 $result = $finder->get_lyrics_by_query($query);
 
 // Check for error
