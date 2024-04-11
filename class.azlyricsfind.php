@@ -4,7 +4,7 @@
 
 class AZLyricsFind {
 
-	function __construct($google_api_keys,$google_cx) {
+    function __construct($google_api_keys,$google_cx) {
         $this->google_api_keys = $google_api_keys;
         $this->google_cx = $google_cx;
     }
