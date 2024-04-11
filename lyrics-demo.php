@@ -1,8 +1,12 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Google Search API Keys (free limit is 100 requests/day. Minimum 1 key)
 // Get API key from https://developers.google.com/custom-search/v1/introduction 
-// (Click 'Get A Key')
+// (Click 'Get A Key')  (Note: they are used randomly so one's limit may reach before others)
 $google_api_keys = [
     '__YOUR_GOOGLE_SEARCH_API_KEY_1__',
     '__YOUR_GOOGLE_SEARCH_API_KEY_2__',
